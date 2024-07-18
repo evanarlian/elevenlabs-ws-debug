@@ -93,7 +93,7 @@ async def text_to_speech_input_streaming():
             )
 
         await websocket.send(json.dumps({"text": ""}))
-
+        print("DONE SENDING ALL LLM TOKENS!!!!!")
         await listen_task
 
 
